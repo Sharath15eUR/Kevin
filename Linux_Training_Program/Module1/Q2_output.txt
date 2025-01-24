@@ -1,0 +1,16 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+asd@pop-os:~/Documents/LinuxTraining_Module1$ #create a file and remove write permission for group user alone.
+asd@pop-os:~/Documents/LinuxTraining_Module1$ 
+asd@pop-os:~/Documents/LinuxTraining_Module1$ mkdir q2
+asd@pop-os:~/Documents/LinuxTraining_Module1$ cd q2
+asd@pop-os:~/Documents/LinuxTraining_Module1/q2$ touch file2.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q2$ ls -l
+total 0
+-rw-rw-r-- 1 asd asd 0 Jan 24 13:21 file2.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q2$ chmod 644 file2.txt 
+asd@pop-os:~/Documents/LinuxTraining_Module1/q2$ ls -l
+total 0
+-rw-r--r-- 1 asd asd 0 Jan 24 13:21 file2.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q2$ 
