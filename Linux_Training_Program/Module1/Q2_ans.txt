@@ -1,0 +1,4 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Ans: chmod 744 file2.txt
