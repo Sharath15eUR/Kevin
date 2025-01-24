@@ -1,0 +1,23 @@
+Name: J Kevin Immanuel
+College: Vellore Institute of Technology, Chennai
+
+
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ #Qn1. Create a file with executable permissions to all users, groups and others
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ touch file1.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ ls -al
+total 8
+drwxrwxr-x 2 asd asd 4096 Jan 24 13:10 .
+drwxrwxr-x 3 asd asd 4096 Jan 24 13:08 ..
+-rw-rw-r-- 1 asd asd    0 Jan 24 13:10 file1.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ ls -l
+total 0
+-rw-rw-r-- 1 asd asd 0 Jan 24 13:10 file1.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ chmod +X file1.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ ls -l
+total 0
+-rw-rw-r-- 1 asd asd 0 Jan 24 13:10 file1.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ chmod +x file1.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ ls -l
+total 0
+-rwxrwxr-x 1 asd asd 0 Jan 24 13:10 file1.txt
+asd@pop-os:~/Documents/LinuxTraining_Module1/q1$ 
