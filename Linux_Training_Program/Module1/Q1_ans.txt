@@ -1,0 +1,4 @@
+Name: J Kevin Immanuel
+College: Vellore Institute of Technology, Chennai
+
+Command for adding executable permission to all users: chmod +x file1.txt
