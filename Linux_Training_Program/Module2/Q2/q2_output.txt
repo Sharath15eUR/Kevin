@@ -1,0 +1,22 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Output:
+
+asd@pop-os:~/Documents/Module2/q2$ cat config.txt 
+localhost is the name for this pc
+you can access this pc by using the name localhost
+localhost is also called 127.0.0.1
+asd@pop-os:~/Documents/Module2/q2$ sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+asd@pop-os:~/Documents/Module2/q2$ cat config.txt 
+localhost is the name for this pc
+you can access this pc by using the name localhost
+localhost is also called 127.0.0.1
+asd@pop-os:~/Documents/Module2/q2$ cat updated_config.txt 
+127.0.0.1 is the name for this pc
+you can access this pc by using the name 127.0.0.1
+127.0.0.1 is also called 127.0.0.1
+asd@pop-os:~/Documents/Module2/q2$ 
+
+
+# From the above, we can see that all changes are saved to updated_config.txt, while config.txt contents are untouched.
