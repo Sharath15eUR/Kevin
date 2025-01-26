@@ -1,0 +1,5 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Command used to check the PID with highest memory usage: ps aux --sort=-%mem | head -n 2
+Command used to kill said process: kill pid
