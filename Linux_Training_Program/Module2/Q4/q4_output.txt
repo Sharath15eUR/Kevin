@@ -1,0 +1,7 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+asd@pop-os:~/Documents/Module2/q3$ ps aux --sort=-%mem | head -n 2
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+asd         2849  0.4 15.1 1467000 302932 ?      SNl  18:56   0:27 io.elementary.appcenter -s
+asd@pop-os:~/Documents/Module2/q3$ kill 2849
