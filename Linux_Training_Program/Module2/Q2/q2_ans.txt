@@ -1,0 +1,8 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Qn)  Replace all occurrences of "localhost" with "127.0.0.1" in a configuration file named config.txt, and save the updated file as updated_config.txt
+
+Command used: sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+
+This command makes sure that all the occurances of 'localhost' is replaced with '127.0.0.1' and the edit is saved into a new file called updated_config.txt, the original file named config.txt is untouched.
