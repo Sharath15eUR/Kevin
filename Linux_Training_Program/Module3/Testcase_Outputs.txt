@@ -1,0 +1,113 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+TestCase - 1: Mentioned backup directory does not exist and Source directory is empty
+Output:
+
+asd@pop-os:~/Documents/Module3$ ./backup_manager.sh "/home/asd/Documents/Module3/source" "/home/asd/Documents/Module3/backup" ".pdf"
+Backup Directory does not exist, creating one...
+
+/home/asd/Documents/Module3/source
+above files/directories are empty. Aborting...
+asd@pop-os:~/Documents/Module3$ 
+
+
+Testcase 2: Backup does not exist, source contains files
+Output:
+asd@pop-os:~/Documents/Module3$ ./backup_manager.sh "/home/asd/Documents/Module3/source" "/home/asd/Documents/Module3/backup" ".txt"
+Backup Directory does not exist, creating one...
+
+______________________________________________
+file1.txt | 15 Bytes
+
+Backup Created for file1.txt
+log.txt | 730 Bytes
+
+Backup Created for log.txt
+______________________________________________
+Number of files backed up = 2
+______________________________________________
+______________________________________________
+BACKUP REPORT:
+
+Total files processed => 2 Files
+Number of files backed up => 2 Files
+File names : 
+file1.txt
+log.txt
+Total size backed up => 745 Bytes
+Backup Directory => /home/asd/Documents/Module3/backup
+asd@pop-os:~/Documents/Module3$ 
+
+
+Testcase 3: Backup version of file is newer than source 
+
+asd@pop-os:~/Documents/Module3$ ./backup_manager.sh "/home/asd/Documents/Module3/source" "/home/asd/Documents/Module3/backup" ".pdf"
+______________________________________________
+rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf | 16650057 Bytes
+
+Backup Created for rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
+______________________________________________
+Number of files backed up = 1
+______________________________________________
+______________________________________________
+BACKUP REPORT:
+
+Total files processed => 1 Files
+Number of files backed up => 1 Files
+File names : 
+rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
+Total size backed up => 16650057 Bytes
+Backup Directory => /home/asd/Documents/Module3/backup
+asd@pop-os:~/Documents/Module3$ ./backup_manager.sh "/home/asd/Documents/Module3/source" "/home/asd/Documents/Module3/backup" ".pdf"
+______________________________________________
+Backup file rm0390-stm32f446xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf newer than source, not backing up
+______________________________________________
+Number of files backed up = 0
+______________________________________________
+______________________________________________
+BACKUP REPORT:
+
+Total files processed => 1 Files
+Number of files backed up => 0 Files
+File names : 
+Total size backed up => 0 Bytes
+Backup Directory => /home/asd/Documents/Module3/backup
+asd@pop-os:~/Documents/Module3$ 
+
+
+asd@pop-os:~/Documents/Module3$ ./backup_manager.sh "/home/asd/Documents/Module3/source" "/home/asd/Documents/Module3/backup" ".txt"
+______________________________________________
+file1.txt | 15 Bytes
+
+Backup Created for file1.txt
+Backup file log.txt newer than source, not backing up
+______________________________________________
+Number of files backed up = 1
+______________________________________________
+______________________________________________
+BACKUP REPORT:
+
+Total files processed => 2 Files
+Number of files backed up => 1 Files
+File names : 
+file1.txt
+Total size backed up => 15 Bytes
+Backup Directory => /home/asd/Documents/Module3/backup
+asd@pop-os:~/Documents/Module3$ 
+
+
+Testcase 4 - Source does not contain any file of given extension
+
+Output:
+
+asd@pop-os:~/Documents/Module3$ ./backup_manager.sh "/home/asd/Documents/Module3/source" "/home/asd/Documents/Module3/backup" ".png"
+No such file of .png extension in source. Aborting...
+asd@pop-os:~/Documents/Module3$ 
+
+Testcase 5 - Any one of the arguments to be passed are missing
+
+Output:
+asd@pop-os:~/Documents/Module3$ ./backup_manager.sh "/home/asd/Documents/Module3/source" "/home/asd/Documents/Module3/backup"
+Not enough arguments. Aborting...
+asd@pop-os:~/Documents/Module3$ 
