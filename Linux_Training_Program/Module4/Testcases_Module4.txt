@@ -1,0 +1,30 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Test case 1: No input file is given:
+
+asd@pop-os:~/Documents/Module4$ ./file_manager.sh 
+No input file given, aborting...
+
+Test case 2: Input file does not exist:
+
+asd@pop-os:~/Documents/Module4$ ./file_manager.sh example.txt
+No such file exists. Aborting
+
+Test case 3: Input file is empty:
+
+asd@pop-os:~/Documents/Module4$ touch example.txt
+asd@pop-os:~/Documents/Module4$ ./file_manager.sh example.txt
+File is empty. Aborting
+
+Test case 4: Input file is not readable:
+
+asd@pop-os:~/Documents/Module4$ chmod 333 input.txt
+asd@pop-os:~/Documents/Module4$ ./file_manager.sh input.txt
+File is not readable. Aborting
+
+Test case 5: Input file exists, has all permissions and is not empty:
+
+asd@pop-os:~/Documents/Module4$ chmod 777 input.txt
+asd@pop-os:~/Documents/Module4$ ./file_manager.sh input.txt
+Output file has been written.
