@@ -55,6 +55,11 @@ if [[ "$1" == "--help" ]]; then
 	help_menu
 	exit 0
 fi
+
+if [[ $# -eq 0 ]]; then
+	help_menu
+fi
+
 while getopts "d:f:k:" flags 2>> error.log; do
 	case $flags in
 		d)
