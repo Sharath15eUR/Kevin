@@ -1,0 +1,55 @@
+Testcase 1: No options passed:
+
+asd@pop-os:~/Documents/Module5$ ./file_analyzer.sh 
+HELP MENU
+_________
+-d = directory
+-f = filename
+-k = keyword to search for
+--help = help menu
+
+Testcase 2: --help option:
+
+asd@pop-os:~/Documents/Module5$ ./file_analyzer.sh --help
+HELP MENU
+_________
+-d = directory
+-f = filename
+-k = keyword to search for
+--help = help menu
+
+Testcase 3: -d Directory and -k keyword are given
+asd@pop-os:~/Documents/Module5$ ./file_analyzer.sh -d ~/Documents -k ERROR
+ERROR Found in /home/asd/Documents/log.txt
+
+Testcase 4: -f File and -k Keyword are given
+
+asd@pop-os:~/Documents/Module5$ ./file_analyzer.sh -f ~/Documents/Module5/textfile.txt -k hello
+hello Found
+
+Testcase 5: Invalid argument passed
+
+asd@pop-os:~/Documents/Module5$ ./file_analyzer.sh -g
+INVALID ARGUMENT
+HELP MENU
+_________
+-d = directory
+-f = filename
+-k = keyword to search for
+--help = help menu
+
+
+Contents of error.log
+
+asd@pop-os:~/Documents/Module5$ cat error.log 
+./file_analyzer.sh: illegal option -- g
+./file_analyzer.sh: illegal option -- g
+No such directory found : /home/asd/Folder
+No such directory found : /home/asd/Folder
+No such directory found : /home/asd/Browser
+No such directory found : /home/asd/Browser
+No such directory found : /home/asd/Browser
+No such directory found : /home/asd/Browser
+./file_analyzer.sh: illegal option -- h
+./file_analyzer.sh: illegal option -- g
+asd@pop-os:~/Documents/Module5$ 
