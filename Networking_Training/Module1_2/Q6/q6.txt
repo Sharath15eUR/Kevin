@@ -1,0 +1,12 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q6) How to access remote system using VNC Viewer, Anydesk, teamviewer, etc
+
+We can remote access another system using applications like VNC Viewer, by using the IP address of the target system in VNC Viewer
+Steps:
+1) Create New connection in File Option
+2) Enter the IP Address of the System and give a name for the connection
+3) Once created, open the newly created connection, enter the username and password to login
+
+<refer attached images>
