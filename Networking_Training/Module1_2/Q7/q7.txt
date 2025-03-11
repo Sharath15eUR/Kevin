@@ -1,0 +1,29 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q7) Default Gateway:
+
+kevin@pop-os:~$ ip route show
+default via 172.20.10.1 dev wlp45s0 proto dhcp metric 603 
+default via 172.20.10.1 dev wlx5ce931cfb7a3 proto dhcp metric 604 
+169.254.0.0/16 dev wlx5ce931cfb7a3 scope link metric 1000 
+172.20.10.0/28 dev wlp45s0 proto kernel scope link src 172.20.10.2 metric 603 
+172.20.10.0/28 dev wlx5ce931cfb7a3 proto kernel scope link src 172.20.10.4 metric 604 
+192.168.56.0/24 dev vboxnet0 proto kernel scope link src 192.168.56.1 linkdown 
+
+Here, 172.20.10.1 is the default gateway
+
+Pinging default gateway:
+
+kevin@pop-os:~$ ping 172.20.10.1
+PING 172.20.10.1 (172.20.10.1) 56(84) bytes of data.
+64 bytes from 172.20.10.1: icmp_seq=1 ttl=64 time=2.19 ms
+64 bytes from 172.20.10.1: icmp_seq=2 ttl=64 time=23.8 ms
+64 bytes from 172.20.10.1: icmp_seq=3 ttl=64 time=24.2 ms
+^C
+--- 172.20.10.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 2.186/16.733/24.238/10.288 ms
+kevin@pop-os:~$ 
+
+What is a default gateway? : It is the access point between local network and other networks. When a device wants to send data outside subnet, it sends the packets to default gateway
