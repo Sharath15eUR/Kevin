@@ -1,0 +1,35 @@
+Name: J Kevin Immanuel 
+College: VIT Chennai
+
+Q11)
+
+Telnet:
+
+kevin@pop-os:~$ telnet 192.168.56.102
+Trying 192.168.56.102...
+Connected to 192.168.56.102.
+Escape character is '^]'.
+Pop!_OS 22.04 LTS
+pop-os login: asd
+Password: 
+Welcome to Pop!_OS 22.04 LTS (GNU/Linux 6.9.3-76060903-generic x86_64)
+
+ * Homepage: https://pop.system76.com
+ * Support:  https://support.system76.com
+
+Last login: Mon Mar 10 14:41:22 IST 2025 from 192.168.56.1 on pts/1
+asd@pop-os:~$ 
+
+
+
+SSH:
+
+kevin@pop-os:~$ ssh asd@192.168.56.102
+asd@192.168.56.102's password: 
+Welcome to Pop!_OS 22.04 LTS (GNU/Linux 6.9.3-76060903-generic x86_64)
+
+ * Homepage: https://pop.system76.com
+ * Support:  https://support.system76.com
+
+Last login: Tue Mar 11 19:00:56 2025 from pop-os
+asd@pop-os:~$ 
