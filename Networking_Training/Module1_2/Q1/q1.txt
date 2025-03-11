@@ -1,0 +1,12 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q1. To copy a file from one machine to another using SCP command.
+
+We will be using SCP command from host machine (kevin@pop-os) to guest VM (asd@pop-os)
+The command used in the host machine is:
+	scp -P 2222 ~/Documents/Team9_Polity.pdf asd@127.0.0.1:~/Documents
+
+The above command tells to secure copy the file Team9_Polity.pdf to the machine asd@127.0.0.1 connected to port 2222
+
+Screenshots to be found attached
