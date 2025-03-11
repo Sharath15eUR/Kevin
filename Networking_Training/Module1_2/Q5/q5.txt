@@ -1,0 +1,9 @@
+Name: J Kevin Immanuel 
+College: VIT Chennai
+
+Q5: What happens when duplicate IP are in a network
+
+i) IP Conflict occurs
+ii) Packets will be misrouted and network is disrupted
+iii) Since two devices have same ip address, other devices in network will be confused on where to send packets
+iv) ARP will detect ip conflict, display ip conflict error and disable the interface
