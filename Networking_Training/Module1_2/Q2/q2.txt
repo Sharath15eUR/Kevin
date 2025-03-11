@@ -1,0 +1,21 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q2. Hosting a FTP and SFTP server and using PUT and GET commands
+
+First, we will have to install vsftpd,ftp and ufw in our server (guest VM):
+  sudo apt install vsftpd ftp ufw
+
+SFTP:
+First, we login to the SFTP server using the command
+	sftp ftpuser@192.168.56.102
+
+where, 192.168.56.102 is the ip address of the server and ftpuser is the user present in the server, where the files will be stored
+
+Then, we can use the PUT command to send a file from local machine to the server <refer attached image>
+
+To get a file from the server to the local machine, we can use the GET command <refer attached image>
+
+FTP:
+The above same commands can be replicated by also using a FTP server. The command to connect to an FTP server is:
+	ftp ftpuser@192.168.56.102
