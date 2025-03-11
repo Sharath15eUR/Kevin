@@ -1,0 +1,110 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q4. 
+PING Command
+
+kevin@pop-os:~$ ping google.com
+PING google.com(maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e)) 56 data bytes
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=1 ttl=117 time=1.83 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=2 ttl=117 time=24.5 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=3 ttl=117 time=17.5 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=4 ttl=117 time=24.0 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=5 ttl=117 time=4.84 ms
+^C
+--- google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4010ms
+rtt min/avg/max/mdev = 1.826/14.517/24.462/9.509 ms
+kevin@pop-os:~$ 
+
+PING WITH COUNT
+
+kevin@pop-os:~$ ping -c 5 google.com
+PING google.com(maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e)) 56 data bytes
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=1 ttl=117 time=17.1 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=2 ttl=117 time=18.3 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=3 ttl=117 time=22.7 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=4 ttl=117 time=23.0 ms
+64 bytes from maa03s31-in-x0e.1e100.net (2404:6800:4007:812::200e): icmp_seq=5 ttl=117 time=8.94 ms
+
+--- google.com ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4013ms
+rtt min/avg/max/mdev = 8.936/18.000/23.034/5.108 ms
+kevin@pop-os:~$ 
+
+
+ARP Command:
+Used to manipulate the ARP cache. 
+
+kevin@pop-os:~$ arp
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.0.103                    (incomplete)                              wlp45s0
+192.168.0.100            ether   bc:32:5f:d4:55:06   C                     wlp45s0
+_gateway                 ether   3c:52:a1:6e:78:aa   C                     wlp45s0
+192.168.0.106                    (incomplete)                              wlp45s0
+
+kevin@pop-os:~$ arp -v
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.0.103                    (incomplete)                              wlp45s0
+192.168.0.100            ether   bc:32:5f:d4:55:06   C                     wlp45s0
+_gateway                 ether   3c:52:a1:6e:78:aa   C                     wlp45s0
+192.168.0.106                    (incomplete)                              wlp45s0
+Entries: 4	Skipped: 0	Found: 4
+kevin@pop-os:~$ 
+
+IFCONFIG:
+
+kevin@pop-os:~$ ifconfig
+enp46s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether fc:34:97:dc:c3:a5  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 23713  bytes 2338450 (2.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 23713  bytes 2338450 (2.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vboxnet0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.56.1  netmask 255.255.255.0  broadcast 192.168.56.255
+        inet6 fe80::800:27ff:fe00:0  prefixlen 64  scopeid 0x20<link>
+        ether 0a:00:27:00:00:00  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 526  bytes 100245 (100.2 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp45s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.117  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 2406:7400:c4:657c:1db3:d28a:8bcb:8f59  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::96ac:fa0f:7e9c:6496  prefixlen 64  scopeid 0x20<link>
+        inet6 2406:7400:c4:657c:9587:b26d:e134:27d0  prefixlen 64  scopeid 0x0<global>
+        ether ec:2e:98:c7:e6:93  txqueuelen 1000  (Ethernet)
+        RX packets 551056  bytes 620288510 (620.2 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 160808  bytes 32814896 (32.8 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlx5ce931cfb7a3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 2312
+        inet 192.168.0.106  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::9d51:bdac:6727:3c02  prefixlen 64  scopeid 0x20<link>
+        inet6 2406:7400:c4:657c:f8c3:9ba:a344:5805  prefixlen 64  scopeid 0x0<global>
+        inet6 2406:7400:c4:657c:f148:74db:1c46:77d1  prefixlen 64  scopeid 0x0<global>
+        ether 5c:e9:31:cf:b7:a3  txqueuelen 1000  (Ethernet)
+        RX packets 12581  bytes 1898481 (1.8 MB)
+        RX errors 0  dropped 6  overruns 0  frame 0
+        TX packets 8944  bytes 1069429 (1.0 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+Output explanation:
+inet: IPv4 address
+netmask: subnet
+inet6: IPv6 address
+ether: MAC Address
