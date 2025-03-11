@@ -1,0 +1,126 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q3. Filters in Wireshark/tcpdump/cisco packet tracer
+
+Wireshark: <refer attached images>
+
+TCPDUMP:
+kevin@pop-os:~$ sudo tcpdump -i wlp45s0 -c 50
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlp45s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+11:06:43.153485 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:06:43.153506 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:06:43.186950 IP pop-os.59370 > 49.205.72.130.actcorp.in.domain: 10109+ [1au] PTR? 117.0.168.192.in-addr.arpa. (55)
+11:06:43.214142 IP 49.205.72.130.actcorp.in.domain > pop-os.59370: 10109 NXDomain 0/1/1 (132)
+11:06:43.214378 IP pop-os.59370 > 49.205.72.130.actcorp.in.domain: 10109+ PTR? 117.0.168.192.in-addr.arpa. (44)
+11:06:43.221664 IP6 :: > ff02::1:ffd4:5506: ICMP6, neighbor solicitation, who has 2406:7400:c4:657c:be32:5fff:fed4:5506, length 24
+11:06:43.222613 IP 49.205.72.130.actcorp.in.domain > pop-os.59370: 10109 NXDomain 0/1/0 (121)
+11:06:43.223688 IP pop-os.43546 > 49.205.72.130.actcorp.in.domain: 4614+ [1au] PTR? 1.0.168.192.in-addr.arpa. (53)
+11:06:43.233764 IP 49.205.72.130.actcorp.in.domain > pop-os.43546: 4614 NXDomain 0/1/1 (130)
+11:06:43.233972 IP pop-os.43546 > 49.205.72.130.actcorp.in.domain: 4614+ PTR? 1.0.168.192.in-addr.arpa. (42)
+11:06:43.247739 IP 49.205.72.130.actcorp.in.domain > pop-os.43546: 4614 NXDomain 0/1/0 (119)
+11:06:43.291455 IP pop-os.45358 > 49.205.72.130.actcorp.in.domain: 32920+ [1au] PTR? 6.0.5.5.4.d.f.f.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (101)
+11:06:43.335464 IP 49.205.72.130.actcorp.in.domain > pop-os.45358: 32920 NXDomain 0/1/1 (165)
+11:06:43.335766 IP pop-os.45358 > 49.205.72.130.actcorp.in.domain: 32920+ PTR? 6.0.5.5.4.d.f.f.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.f.f.ip6.arpa. (90)
+11:06:43.346416 IP 49.205.72.130.actcorp.in.domain > pop-os.45358: 32920 NXDomain 0/1/0 (154)
+11:06:43.348655 IP pop-os.54603 > 49.205.72.130.actcorp.in.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.353715 IP6 pop-os > ff02::16: HBH ICMP6, multicast listener report v2, 4 group record(s), length 88
+11:06:43.362796 IP 49.205.72.130.actcorp.in.domain > pop-os.54603: 24857 ServFail 0/0/1 (101)
+11:06:43.363028 IP pop-os.54603 > 49.205.72.130.actcorp.in.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.393367 IP 49.205.72.130.actcorp.in.domain > pop-os.54603: 24857 ServFail 0/0/1 (101)
+11:06:43.393598 IP pop-os.54603 > 49.205.72.130.actcorp.in.domain: 24857+ PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (90)
+11:06:43.401225 IP 49.205.72.130.actcorp.in.domain > pop-os.54603: 24857 ServFail 0/0/0 (90)
+11:06:43.401555 IP6 pop-os.39599 > 2406:7400:b0:b::2.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.404348 IP6 2406:7400:b0:b::2.domain > pop-os.39599: 24857 ServFail 0/0/1 (101)
+11:06:43.404500 IP6 pop-os.39599 > 2406:7400:b0:b::2.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.406053 IP6 2406:7400:b0:b::2.domain > pop-os.39599: 24857 ServFail 0/0/1 (101)
+11:06:43.406099 IP6 pop-os.39599 > 2406:7400:b0:b::2.domain: 24857+ PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (90)
+11:06:43.407554 IP6 2406:7400:b0:b::2.domain > pop-os.39599: 24857 ServFail 0/0/0 (90)
+11:06:43.407679 IP6 pop-os.39199 > 2406:7400:a:10::2.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.415453 IP6 2406:7400:a:10::2.domain > pop-os.39199: 24857 ServFail 0/0/1 (101)
+11:06:43.415592 IP6 pop-os.39199 > 2406:7400:a:10::2.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.422846 IP6 2406:7400:a:10::2.domain > pop-os.39199: 24857 ServFail 0/0/1 (101)
+11:06:43.423022 IP6 pop-os.39199 > 2406:7400:a:10::2.domain: 24857+ PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (90)
+11:06:43.430006 IP6 2406:7400:a:10::2.domain > pop-os.39199: 24857 ServFail 0/0/0 (90)
+11:06:43.430263 IP pop-os.45214 > 183.82.243.66.actcorp.in.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.432206 IP 183.82.243.66.actcorp.in.domain > pop-os.45214: 24857 ServFail 0/0/1 (101)
+11:06:43.432267 IP pop-os.45214 > 183.82.243.66.actcorp.in.domain: 24857+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.435968 IP 183.82.243.66.actcorp.in.domain > pop-os.45214: 24857 ServFail 0/0/1 (101)
+11:06:43.436100 IP pop-os.45214 > 183.82.243.66.actcorp.in.domain: 24857+ PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (90)
+11:06:43.437256 IP 183.82.243.66.actcorp.in.domain > pop-os.45214: 24857 ServFail 0/0/0 (90)
+11:06:43.438220 IP pop-os.53926 > 183.82.243.66.actcorp.in.domain: 47939+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.440662 IP 183.82.243.66.actcorp.in.domain > pop-os.53926: 47939 ServFail 0/0/1 (101)
+11:06:43.440700 IP pop-os.53926 > 183.82.243.66.actcorp.in.domain: 47939+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.442397 IP 183.82.243.66.actcorp.in.domain > pop-os.53926: 47939 ServFail 0/0/1 (101)
+11:06:43.442431 IP pop-os.53926 > 183.82.243.66.actcorp.in.domain: 47939+ PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (90)
+11:06:43.443839 IP 183.82.243.66.actcorp.in.domain > pop-os.53926: 47939 ServFail 0/0/0 (90)
+11:06:43.443890 IP pop-os.49506 > 49.205.72.130.actcorp.in.domain: 47939+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.467097 IP 49.205.72.130.actcorp.in.domain > pop-os.49506: 47939 ServFail 0/0/1 (101)
+11:06:43.467291 IP pop-os.49506 > 49.205.72.130.actcorp.in.domain: 47939+ [1au] PTR? 6.0.5.5.4.d.e.f.f.f.f.5.2.3.e.b.c.7.5.6.4.c.0.0.0.0.4.7.6.0.4.2.ip6.arpa. (101)
+11:06:43.479168 IP 49.205.72.130.actcorp.in.domain > pop-os.49506: 47939 ServFail 0/0/1 (101)
+50 packets captured
+193 packets received by filter
+0 packets dropped by kernel
+
+
+
+
+tcpdump filter by host:
+
+kevin@pop-os:~$ sudo tcpdump -i wlp45s0 -c 50 host 192.168.0.117
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on wlp45s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+11:28:36.534778 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:36.534793 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:37.941036 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:37.941062 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:38.983483 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:38.983503 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:39.522665 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:39.522679 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:40.784880 IP pop-os.45803 > maa05s19-in-f14.1e100.net.https: UDP, length 29
+11:28:40.808171 IP maa05s19-in-f14.1e100.net.https > pop-os.45803: UDP, length 26
+11:28:44.802822 IP pop-os.57702 > inbom5-ntp-001.aaplimg.com.ntp: NTPv4, Client, length 48
+11:28:44.826911 IP inbom5-ntp-001.aaplimg.com.ntp > pop-os.57702: NTPv4, Server, length 48
+11:28:45.489256 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:45.489272 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:46.812900 IP pop-os.35422 > prod-ntp-5.ntp1.ps5.canonical.com.ntp: NTPv4, Client, length 48
+11:28:46.869773 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:46.869791 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:46.970861 IP prod-ntp-5.ntp1.ps5.canonical.com.ntp > pop-os.35422: NTPv4, Server, length 48
+11:28:48.004936 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:48.004959 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:48.516844 ARP, Request who-has pop-os (ec:2e:98:c7:e6:93 (oui Unknown)) tell _gateway, length 46
+11:28:48.516865 ARP, Reply pop-os is-at ec:2e:98:c7:e6:93 (oui Unknown), length 28
+11:28:49.948580 IP maa05s19-in-f14.1e100.net.https > pop-os.45803: UDP, length 37
+11:28:49.950113 IP pop-os.45803 > maa05s19-in-f14.1e100.net.https: UDP, length 34
+11:28:50.492045 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 1711723652:1711723763, ack 2748495269, win 1656, options [nop,nop,TS val 1287999552 ecr 2535569706], length 111
+11:28:50.492071 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 111:661, ack 1, win 1656, options [nop,nop,TS val 1287999552 ecr 2535569706], length 550
+11:28:50.782767 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [.], ack 111, win 425, options [nop,nop,TS val 2535599702 ecr 1287999552], length 0
+11:28:50.782767 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [.], ack 661, win 425, options [nop,nop,TS val 2535599702 ecr 1287999552], length 0
+11:28:50.782767 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [P.], seq 1:40, ack 661, win 425, options [nop,nop,TS val 2535599702 ecr 1287999552], length 39
+11:28:50.823654 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [.], ack 40, win 1656, options [nop,nop,TS val 1287999884 ecr 2535599702], length 0
+11:28:50.876592 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [P.], seq 40:714, ack 661, win 425, options [nop,nop,TS val 2535599819 ecr 1287999552], length 674
+11:28:50.876615 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [.], ack 714, win 1678, options [nop,nop,TS val 1287999936 ecr 2535599819], length 0
+11:28:50.876592 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [P.], seq 714:745, ack 661, win 425, options [nop,nop,TS val 2535599819 ecr 1287999552], length 31
+11:28:50.876622 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [.], ack 745, win 1678, options [nop,nop,TS val 1287999936 ecr 2535599819], length 0
+11:28:50.877995 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 661:696, ack 745, win 1678, options [nop,nop,TS val 1287999938 ecr 2535599819], length 35
+11:28:50.903478 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 696:807, ack 745, win 1678, options [nop,nop,TS val 1287999963 ecr 2535599819], length 111
+11:28:50.903511 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [.], seq 807:2235, ack 745, win 1678, options [nop,nop,TS val 1287999963 ecr 2535599819], length 1428
+11:28:50.903512 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 2235:3663, ack 745, win 1678, options [nop,nop,TS val 1287999963 ecr 2535599819], length 1428
+11:28:50.904268 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [.], seq 3663:5091, ack 745, win 1678, options [nop,nop,TS val 1287999964 ecr 2535599819], length 1428
+11:28:50.904271 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 5091:5183, ack 745, win 1678, options [nop,nop,TS val 1287999964 ecr 2535599819], length 92
+11:28:51.194610 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [.], ack 807, win 425, options [nop,nop,TS val 2535600093 ecr 1287999938], length 0
+11:28:51.194610 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [.], ack 3663, win 425, options [nop,nop,TS val 2535600093 ecr 1287999963], length 0
+11:28:51.194610 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [.], ack 5183, win 425, options [nop,nop,TS val 2535600094 ecr 1287999964], length 0
+11:28:51.230901 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [P.], seq 745:1271, ack 5183, win 425, options [nop,nop,TS val 2535600182 ecr 1287999964], length 526
+11:28:51.230901 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [P.], seq 1271:1302, ack 5183, win 425, options [nop,nop,TS val 2535600182 ecr 1287999964], length 31
+11:28:51.230985 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [.], ack 1302, win 1700, options [nop,nop,TS val 1288000291 ecr 2535600182], length 0
+11:28:51.234442 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 5183:5290, ack 1302, win 1700, options [nop,nop,TS val 1288000294 ecr 2535600182], length 107
+11:28:51.234460 IP pop-os.55300 > ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https: Flags [P.], seq 5290:5794, ack 1302, win 1700, options [nop,nop,TS val 1288000294 ecr 2535600182], length 504
+11:28:51.470805 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [.], ack 5794, win 425, options [nop,nop,TS val 2535600424 ecr 1288000294], length 0
+11:28:51.594888 IP ec2-44-236-180-21.us-west-2.compute.amazonaws.com.https > pop-os.55300: Flags [P.], seq 1302:5333, ack 5794, win 425, options [nop,nop,TS val 2535600549 ecr 1288000294], length 4031
+50 packets captured
+53 packets received by filter
+0 packets dropped by kernel
