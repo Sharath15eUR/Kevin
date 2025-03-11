@@ -1,0 +1,12 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q10)
+
+A DHCP server is used to automatically allocate unique IP address to a machine in a network.
+A DHCP server can assign a device its IP Address, Subnet Mask, default gateway and DNS Server
+DHCP servers are ran on routers or servers. 
+  1) When a system does not have an IP address in the network, it broadcasts a message, looking for a DHCP server available in the network. This is known as DHCPDiscover
+  2) When DHCP server gets the message, it responds with an IP address within its scope/range. This is DHCPOffer
+  3) When the system accepts the IP address, it sends a request to the DHCP server. This is known as DHCPRequest
+  4) DHCPACK: The Server then gives the IP address along with a subnet mask, default gateway, etc. This is given as a lease, with a lease time. The system will have to renew the IP within the time, or else the IP address will be returned back to the available range of addresses for future allocation.
