@@ -1,0 +1,89 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q8)
+ 
+
+kevin@pop-os:~$ ifconfig
+enp46s0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether fc:34:97:dc:c3:a5  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 3173  bytes 341602 (341.6 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3173  bytes 341602 (341.6 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vboxnet0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.56.1  netmask 255.255.255.0  broadcast 192.168.56.255
+        inet6 fe80::800:27ff:fe00:0  prefixlen 64  scopeid 0x20<link>
+        ether 0a:00:27:00:00:00  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 383  bytes 67321 (67.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlp45s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.0.117  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 fe80::96ac:fa0f:7e9c:6496  prefixlen 64  scopeid 0x20<link>
+        inet6 2406:7400:c4:5fd3:a573:2800:cd41:94ae  prefixlen 64  scopeid 0x0<global>
+        inet6 2406:7400:c4:5fd3:de67:efbc:38d5:ef1d  prefixlen 64  scopeid 0x0<global>
+        ether ec:2e:98:c7:e6:93  txqueuelen 1000  (Ethernet)
+        RX packets 70580  bytes 72685018 (72.6 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 36274  bytes 7351282 (7.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlx5ce931cfb7a3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 2312
+        inet 192.168.0.106  netmask 255.255.255.0  broadcast 192.168.0.255
+        inet6 2406:7400:c4:5fd3:37d2:3956:2874:6d9e  prefixlen 64  scopeid 0x0<global>
+        inet6 2406:7400:c4:5fd3:e9f0:9311:9067:786b  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::9d51:bdac:6727:3c02  prefixlen 64  scopeid 0x20<link>
+        ether 5c:e9:31:cf:b7:a3  txqueuelen 1000  (Ethernet)
+        RX packets 4514  bytes 725504 (725.5 KB)
+        RX errors 0  dropped 38  overruns 0  frame 0
+        TX packets 3066  bytes 401758 (401.7 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+
+Output explanation:
+inet: IPv4 address
+netmask: subnet
+inet6: IPv6 address
+ether: MAC Address
+MTU - Maximum Transmission Unit - Maximum packet size in bytes that can be transmitted at once
+
+IWCONFIG:
+
+
+kevin@pop-os:~$ iwconfig
+lo        no wireless extensions.
+
+enp46s0   no wireless extensions.
+
+wlx5ce931cfb7a3  IEEE 802.11bgn  ESSID:"ACTFIBERNET"  Nickname:"<WIFI@REALTEK>"
+          Mode:Managed  Frequency:2.412 GHz  Access Point: 3C:52:A1:6E:78:AA   
+          Bit Rate:72.2 Mb/s   Sensitivity:0/0  
+          Retry:off   RTS thr:off   Fragment thr:off
+          Power Management:off
+          Link Quality=99/100  Signal level=72/100  Noise level=0/100
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:0   Missed beacon:0
+
+wlp45s0   IEEE 802.11  ESSID:"ACTFIBERNET"  
+          Mode:Managed  Frequency:2.412 GHz  Access Point: 3C:52:A1:6E:78:AA   
+          Bit Rate=144.4 Mb/s   Tx-Power=3 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=70/70  Signal level=-39 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:2  Invalid misc:0   Missed beacon:0
+
+vboxnet0  no wireless extensions.
