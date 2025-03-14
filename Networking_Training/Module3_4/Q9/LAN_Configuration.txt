@@ -1,0 +1,9 @@
+Q9)
+
+The "ip link" command can help us to manage the network interfaces connected to our machine.
+
+i) ip link set : this command allows us to set the status of any network interfaces connected to UP or DOWN, change the TYPE, MULTICAST on or off, PROMISCUOUS on or off, etc.
+ii) ip link add : this command allows us to add a new network interface to our device.
+iii) ip link deleta : deletes/removes the network interface from our device
+
+Other than these subcommands, there are various uses of ip link which can further help us to configure a LAN network.
