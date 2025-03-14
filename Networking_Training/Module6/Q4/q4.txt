@@ -1,0 +1,16 @@
+Name:J Kevin Immanuel
+College: VIT Chennai
+
+a) 192.168.10.5 : This is a CLASS C Address
+b) 172.20.15.1 : This is a CLASS B Address
+c) 8.8.8.8 : This is a CLASS A Address
+
+(a) and (b) are private IP Addresses as:
+(a) is within the range: 192.168.0.0 to 192.168.255.255
+(b) is within the range: 172.16.0.0. to 172.31.255.255
+
+(c) is a public IP Address
+
+A NAT is responsible for Private IP to be converted to public IP for outgoing frames to internet, and public IP from internet will be converted to Private IP. Whenever a private IP is transmitting a frame
+to a public IP, the router converts the private IP into a public IP for communicating outside the local network. Similarly, any frame coming from a public IP to the system, the router converts the destination
+public IP into the private IP of the desired system.
