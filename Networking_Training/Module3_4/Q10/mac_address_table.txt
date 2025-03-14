@@ -1,0 +1,48 @@
+Q10)
+
+MAC Address Table can be viewed by using the following command:
+  bridge adb show
+on a linux based switch
+
+OUTPUT OF THE COMMAND:
+
+kevin@pop-os:~$ bridge fdb show
+33:33:00:00:00:01 dev enp46s0 self permanent
+01:00:5e:00:00:01 dev enp46s0 self permanent
+01:00:5e:00:00:01 dev wlx5ce931cfb7a3 self permanent
+33:33:00:00:00:01 dev wlx5ce931cfb7a3 self permanent
+33:33:ff:27:3c:02 dev wlx5ce931cfb7a3 self permanent
+01:00:5e:00:00:fb dev wlx5ce931cfb7a3 self permanent
+33:33:ff:67:78:6b dev wlx5ce931cfb7a3 self permanent
+33:33:ff:c0:dc:20 dev wlx5ce931cfb7a3 self permanent
+33:33:00:00:00:fb dev wlx5ce931cfb7a3 self permanent
+33:33:ff:dd:05:d2 dev wlp45s0 self permanent
+33:33:00:00:00:01 dev virbr0 self permanent
+01:00:5e:00:00:6a dev virbr0 self permanent
+33:33:00:00:00:6a dev virbr0 self permanent
+01:00:5e:00:00:01 dev virbr0 self permanent
+01:00:5e:00:00:fb dev virbr0 self permanent
+52:54:00:a5:8a:ee dev virbr0 vlan 1 master virbr0 permanent
+52:54:00:a5:8a:ee dev virbr0 master virbr0 permanent
+33:33:00:00:00:01 dev docker0 self permanent
+01:00:5e:00:00:6a dev docker0 self permanent
+33:33:00:00:00:6a dev docker0 self permanent
+01:00:5e:00:00:01 dev docker0 self permanent
+01:00:5e:00:00:fb dev docker0 self permanent
+02:42:89:5c:ff:c7 dev docker0 vlan 1 master docker0 permanent
+02:42:89:5c:ff:c7 dev docker0 master docker0 permanent
+33:33:00:00:00:01 dev vboxnet0 self permanent
+01:00:5e:00:00:01 dev vboxnet0 self permanent
+01:00:5e:00:00:fb dev vboxnet0 self permanent
+33:33:ff:00:00:00 dev vboxnet0 self permanent
+33:33:00:00:00:fb dev vboxnet0 self permanent
+
+
+Here, we can see that there are many interfaces, like enp46s0, wlx5ce931cfb7a3, etc.
+What we can see is that many of these interfaces are part of the system itself, represented by "self", while some are virtual bridges like "vboxnet0"
+
+
+Basic operation of a switch:
+  A switch has multiple systems connected to it. The way a switch can transfer packets is by using MAC Address of the systems. If a system sends a packet and the switch knows the destination MAC address,
+then it will forward the packet to only the destination MAC address and not to any other. If it does not know the MAC Address (not part of the MAC ADdress table), then it will forward it to all the devices
+connected, and once the response comes back, it will learn the MAC address for future use.
