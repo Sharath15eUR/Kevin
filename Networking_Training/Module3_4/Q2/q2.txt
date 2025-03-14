@@ -1,0 +1,19 @@
+Q2)
+
+From the attached screenshots, we have generated traffic using ping command and pinging from attached network device to the router. 
+
+Source IP: 192.168.0.117
+Destination IP: 192.168.0.1
+
+Ethernet frame analysis:
+
+Destination: This is the MAC address of the destination the packet is transmitting to.
+Source: This is the MAC address of the source of the packet.
+
+From the iwconfig output, we can see that the network device and the source have the same MAC address, which means this packet is being sent by the network device.
+
+Ethertype: IPv4 (ICMP)
+
+Payload: It is the data contents of the packet. 
+
+<refer images uploaded>
