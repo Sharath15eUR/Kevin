@@ -1,0 +1,17 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q6)
+
+We are given three IP Addresses:
+
+i) 10.1.1.1 - This is a class A address as the first byte is in the range 0 - 127 and the default subnet mask is 255.0.0.0
+ii) 172.16.5.10 - This is a Class B Address as the first byte is in range 128 - 191 and the default subnet mask is 255.255.0.0
+iii) 192.168.1.5 - This is a class C address as it is in range of 192-223 and the default subnet mask is 255.255.255.0
+
+
+RANGE:
+
+Class A: 0.0.0.0 to 127.255.255.255
+Class B: 128.0.0.0 to 191.255.255.255
+Class C: 192.0.0.0 to 223.255.255.255
