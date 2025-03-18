@@ -1,1 +1,7 @@
+The linux kernel also has a combination of network layers, drivers, modules and protocols. Together, they enable the possibility of communication
 
+Firstly, the data about to be sent is receved from the application layer. User space in linux is part of the application layer. Then, the data gets encapsulated with TCP/UDP headers in the transport layer, IP headers in the Network Layer and finally, ethernet headers are added in the data link layer.
+
+Once all the encapsulation is done, the data is sent to the network interface through the use of socketbuffer and then is transmitted by physical means.
+
+When receiving, the network interface receives the data, the MAC address is verified and then the data is forwarded to data link layer. In this layer, the ethernet headers are removed and forwarded to network layer, which removes the IP headers, forwards it to transport layer. This layer removes the TCP/UDP headers and then finally, the data is passed on to application layer (user space).
