@@ -1,0 +1,18 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q) Devices that we use in our daily life, their wifi properties and which wifi generation they belong to.
+
+Ans) There are mainly 3 devices that I use in my daily life:
+
+1) Smartphone:
+Smartphone used here is iphone 12. This is a dual band phone (supports 2.5Ghz and 5GHz wifi). It belongs to WIFI 6. Once connected to internet, the device is first assigned an IP address by the DHCP server (router). It also then has security encryption WPA3.
+it can also share WIFI using a hotspot.
+
+2) Laptop:
+Laptop used here is ASUS TUF F17. This is also a dual band laptop. It is a WIFI 6 certified laptop. It uses a Realtek PCI WIFI card, and it is possible to swap the wifi card, ensuring future upgradation. So, it is theoretically possible to connect a WIFI 7 card due to
+the M.2 connection that WIFI 7 cards use. However, at this moment, we are using WIFI 6. Similar to phones, there is security encryption and also an IP address being assigned by DHCP server.
+
+3) Router:
+The router used in my home is TP-Link WR850N. This is a WIFI 4 router, meaning this has slower data rates compared to WIFI 6. It is to be noted that WIFI 6 is backwards compatible, which is why the other two devices can connect to the router with no issues. The router 
+has a data rate of 300Mbps. It has WPA2 encryption instead of WPA3. 
