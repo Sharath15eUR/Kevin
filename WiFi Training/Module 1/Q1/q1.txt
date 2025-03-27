@@ -1,0 +1,7 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q) In which OSI layer does WIFI standard/protocol fits?
+
+Ans) WiFi comes under both Physical and Data link layer. WiFi involves with transmission of data through wireless means (radio waves), bands (2.5GHz/5GHz), etc. This comes under the Physical layer.
+Wifi also is part of data link due to the addressing, multiplexing, CSMA/CD (error detection and control).
