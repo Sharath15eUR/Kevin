@@ -1,0 +1,18 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+A backhaul refers to the connection/link between the internet and smaller subnetworks (like home WLAN).
+There are mainly two types:
+1) Wired
+2) Wireless
+
+Wired:
+  1) Fiber optics - High data rate and low latency but with high cost.
+  2) Copper Cables - Comparitively lower data rate but cheaper. Is also older technology.
+
+Wireless:
+  1) Microwave - Uses radio waves to transmit data wirelessly.
+  2) mmWave - Operates on higher frequencies, resulting in higher speed.
+  3) Satellite - Useful for rural and remote areas where it is not possible to setup other wired/wireless networks. Has higher latency compared to microwave and mmwave.
+
+My college mainly uses Wired backhaul (fiber optics and copper cables) for the lab and office systems, while for general purpose usage like student wifi, wireless backhauls are used.
