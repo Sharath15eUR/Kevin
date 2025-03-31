@@ -1,0 +1,10 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q5) What is the difference between bridge mode and repeater mode?
+
+Repeater mode : This mode makes the router act as a repeater. It means that the repeater router connected to the main router receives the signal from it, amplifies it, and broadcasts the amplified signal to the 
+devices connected to the repeater router.
+
+Bridge mode : This mode makes the router lose it's additional propertles like NAT, DHCP, etc. It acts as a simple bridge that only transmits the received data to the desired destination MAC address, if the address is known. If
+not known, it will broadcast the message to all the connected devices.
