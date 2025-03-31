@@ -1,0 +1,7 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q4) What is the main functionality of a wifi accesspoint?
+
+A wifi accesspoint converts the information from a wired network into a wireless information. It enables a wired device to connect to a wireless medium and allow other wireless devices to communicate with said wired device.
+It is also responsible for acting as a signal extender, and also helps in network management(firewalls, device management, etc.).
