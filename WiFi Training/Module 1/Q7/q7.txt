@@ -1,0 +1,6 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+From the attached screenshot, we can see that the router that is used in my home is a router that has 802.11n, meaning a protocol that operates on both 2.4GHz and 5GHz.
+We can also see that the options provided do not have any option to switch to only 2.4GHz, but a mix between 802.11b/g/n. Therefore, it is not entirely possible for
+me to check the wifi properties of only 5GHz band.
