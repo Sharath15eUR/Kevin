@@ -1,0 +1,14 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q6) Difference between 802.11a and 802.11b
+
+802.11a:
+  i) Operates in 5GHz band
+  ii) Offers higher datarate (54Mbps)
+  iii) Shorter range and prone to obstacles like walls
+
+802.11b:
+  i) Operates in 2.4GHz band
+  ii) Offers lower datarate (11Mbps)
+  iii) Longer range and is not affected by obstacles like walls
