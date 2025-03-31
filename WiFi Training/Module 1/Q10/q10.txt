@@ -1,0 +1,10 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Wifi Topologies:
+
+1) Infrastructure mode - Where all the devices connect to a single AP. Use case: Home networks.
+2) Mesh topology - Different APs are connected to each other, forming a mesh. Use case: This is mainly used in larger networks like campus, outdoor public spaces.
+3) Ad-hoc mode - Direct connection between two devices without the use of an AP. Use case: File and data transfer between two devices (phones, laptops).
+4) Vehicular wifi - Wifi networks deployed in vehicles like bus and trains. 
+5) Sensor network wifi - Wifi to connect low power iot devices. These use low power wifi standards. Use case : Home automation
