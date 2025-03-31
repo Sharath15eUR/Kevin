@@ -1,0 +1,10 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q8) Difference between WFA and IEEE.
+
+IEEE stands for Institute of Electrical and Electronics Engineers. IEEE is responsible for developing the technical standards like IEEE 802.11a/b/g/n. These are theoretical
+and provides the manufacturers a blueprint as to how the product should work. 
+
+WFA stands for WiFi Alliance. This organization is responsible for testing and certifying various products and ensure that the said products follow the IEEE standards. This
+is done so that all the certified products from different brands can work with each other in a network reliably.
