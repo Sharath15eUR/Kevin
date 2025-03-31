@@ -1,0 +1,9 @@
+Name: J Kevin Immanuel
+College: VIT Chennai
+
+Q3) What is BSS and ESS?
+
+BSS (Basic Service Set):
+  It refers to a group of wireless devices that can communicate with each other. Essentially, it is a WLAN network. For example, a home wireless network is a BSS.
+ESS (Extended Service Set):
+  It refers to a group of BSS that are interconnected with each other. For example, an office with multiple WLAN networks interconnected consists of an ESS.
