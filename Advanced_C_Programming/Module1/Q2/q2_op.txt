@@ -1,0 +1,37 @@
+Enter the number of elements: 7
+
+Enter the element: 5
+
+Enter the element: 9
+
+Enter the element: 2
+
+Enter the element: 8
+
+Enter the element: 7
+
+Enter the element: 4
+
+Enter the element: 1
+
+UNORDERED
+5
+9
+2
+8
+7
+4
+1
+
+ORDERED
+2
+8
+4
+5
+9
+7
+1
+
+Process returned 0 (0x0)   execution time : 14.590 s
+Press any key to continue.
+
