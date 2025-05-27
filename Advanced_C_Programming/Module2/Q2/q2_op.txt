@@ -1,0 +1,24 @@
+
+
+Enter the number of prime numbers: 5
+
+THE SUM = 28
+
+Thread 1 running
+Thread 2 running
+Thread 1 running
+^CThread 2 running
+Interrupt detected, program not stopped
+
+Thread 1 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Thread 2 running
+Thread 1 running
+Time taken for execution = 18.000000
