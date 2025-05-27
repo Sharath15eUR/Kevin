@@ -1,0 +1,11 @@
+1. Child Process - fork()
+The fork() system call in C programming on Unix-like systems is responsible for creating a new process, known as the child process, by duplicating the calling parent process. After the fork() call, both processes operate independently, with the parent receiving the child's PID and the child getting a return value of 0. This mechanism is essential for running tasks in parallel or launching new programs using exec().
+
+2. Processing Common Signals
+Signals serve as asynchronous notifications from the operating system, alerting a process about events such as user interrupts (like SIGINT) or termination requests (like SIGTERM). In C programming, functions like signal() and sigaction() allow developers to define specific handler routines for these signals. Properly managing signals ensures that programs terminate gracefully, clean up resources, and handle errors reliably.
+
+3. Investigating Various Kernel Crashes
+A kernel crash, or kernel panic, happens when the operating system's kernel encounters a critical error that it can't recover from, causing the whole system to fail. Common culprits include hardware failures, null pointer dereferences, race conditions, or serious bugs in kernel modules and device drivers written in C. Understanding these issues is vital for kernel developers to maintain system stability and effectively troubleshoot significant crashes.
+
+4. Time Complexity
+Time complexity is all about how the execution time of an algorithm increases as the input size grows, typically expressed using Big O notation. It serves as a theoretical measure of efficiency, ignoring constant factors and lower-order terms for larger inputs. Analyzing time complexity in C helps programmers choose the most efficient algorithms for specific computing tasks.
