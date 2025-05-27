@@ -9,3 +9,6 @@ A kernel crash, or kernel panic, happens when the operating system's kernel enco
 
 4. Time Complexity
 Time complexity is all about how the execution time of an algorithm increases as the input size grows, typically expressed using Big O notation. It serves as a theoretical measure of efficiency, ignoring constant factors and lower-order terms for larger inputs. Analyzing time complexity in C helps programmers choose the most efficient algorithms for specific computing tasks.
+
+5. Locking Mechanisms - Mutex/Spinlock  
+In C concurrent programming, locking is crucial to prevent race conditions that occur when multiple threads try to access shared resources. A Mutex will block any thread that attempts to lock a resource that's already in use, causing it to sleep and give up the CPU. On the flip side, a Spinlock keeps the thread in a "busy-wait" state, continuously looping until the resource becomes available. This makes Spinlocks particularly useful for very short critical sections.
